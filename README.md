@@ -1,2 +1,5 @@
-# SQA_final_assignment
-Demonstrating Software Quality - Software Quality Assurance INFS3028
+# Software Quality Assurance Final Assignment
+
+## Demonstrating Software Quality
+
+Lilian Desvaux de Marigny - D19124161
