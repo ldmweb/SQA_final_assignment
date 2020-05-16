@@ -16,8 +16,6 @@ This repository also covers the following themes :
 
 - [**Sprint backlog and task estimation**](#sprint-backlog-and-task-estimation)
 
-- [**Project Documentation**](#project-documentation)
-
 - [**Unit testing and Test-Driven development**](#unit-testing-and-test-driven-development)
 
 - [**Test coverage metric**](#test-coverage-metric)
