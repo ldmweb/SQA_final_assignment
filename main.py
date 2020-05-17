@@ -9,4 +9,4 @@ class controller:
 
     def createSurvey(self, name):
         self.surveys.append(survey(name))
-        return "Survey created successfully"
+        return ("Survey '" + name + "' created successfully")
