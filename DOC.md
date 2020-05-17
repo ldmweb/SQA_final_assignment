@@ -2,7 +2,7 @@
 
 ## Sample Software code documentation
 
-You will find in this file the technical documentation for the sample code project, including the followinf part :
+You will find in this file the technical documentation for the sample code project, including the following part :
 
 - [**Code documentation**](#Code-documentation)
 - [**Tests tool documentation**](#Tests-tool-documentation)
@@ -60,7 +60,7 @@ Use coverage run to run your test suite and gather data about the coverage metri
 coverage run -m pytest tests.py
 ```
 
-once the tests ran, use the following command to report on the result of the coverage for our **main.py** file:
+once the tests run, use the following command to report on the result of the coverage for our **main.py** file:
 
 ```
 coverage report -m main.py
@@ -68,13 +68,13 @@ coverage report -m main.py
 
 PUT IMAGE RESULT WHEN FINISH DEV
 
-The `Stmts` column represent the number of line in the file.
+The `Stmts` column represents the number of line in the file.
 
-The `Miss` column represent the number of line not tested in the file.
+The `Miss` column represents the number of line not tested in the file.
 
-The `Cover` colum represent the percentage of code tested in the file
+The `Cover` column represents the percentage of code tested in the file
 
-The `Missing` colum represent the percentage of code NOT tested in the file
+The `Missing` column represents the percentage of code NOT tested in the file
 
 For a nicer presentation, and to get annotated HTML listings detailing missed lines, use the following command :
 
@@ -82,7 +82,7 @@ For a nicer presentation, and to get annotated HTML listings detailing missed li
 coverage html main.py
 ```
 
-It will generate an html website that you can open by double clicking on `index.html`
+It will generate an html website that you can open by double-clicking on `index.html`
 
 PUT IMAGE RESULT WHEN FINISH DEV
 
