@@ -140,7 +140,7 @@ For this sample code project, we used the following gitflow process.
    Don't forget to provide a clear commit message indicating what changes you have brought to the file(s) and which feature/tasks it correspond to. To commit your file(s), just type :
 
 ```
-    git commit -m "[commit message]"
+    git commit -m "[your_commit_message]"
 ```
 
 5. Finally, to push your changes on your feature_branch, just type :
@@ -152,6 +152,25 @@ For this sample code project, we used the following gitflow process.
 6. Once the feature you developed is done and tested, you can merge your feature_branch with the development branch to implement your work to the global project. To do so, perform a pull request on the dev branch from your feature_branch. The pull request will be reviewed by the project manager and accepted if all the requirement and tests are correct. You can then start a new feature in a new branch.
 
 It is highly important that all the members of the team respect this gitflow process in order to develop separately the different part of the project without interfering with each other.
+
+---
+
+### **Code-review checklist**
+
+Before validating a pull request, project manager or reviewer must check a list of things that needs to be present in the code in order to be validated.
+
+For this sample project, here is the checklist of things that a reviewer should check when reviewing a Pull Request :
+
+- [x] Code is fonctionnal
+- [x] Code can be understood by all the team members
+- [x] Code follow the coding style of the team
+- [x] No duplicate code
+- [x] No commented or debuging code
+- [x] No unused code
+- [x] Each code feature is documented in the [**DOC.md**](./DOC.md) file
+- [x] Each third party framework and module used are documented in the [**DOC.md**](./DOC.md) file
+- [x] Each code feature is tested / can be tested
+- [x] Testing coverage of the code is 100%
 
 ---
 
