@@ -36,9 +36,55 @@ To check that you installed the correct version:
 pytest --version
 ```
 
+To launch the test suite, run the following command :
+
+```
+pytest tests.py
+```
+
 ---
 
 ### **Coverage tool documentation**
+
+In this sample project, we use the test coverage tool **coverage.py** to check how much of our code is covered by our **py.test** series
+
+To install the coverage.py tool, run the following command :
+
+```
+pip install coverage
+```
+
+Use coverage run to run your test suite and gather data about the coverage metrics :
+
+```
+coverage run -m pytest tests.py
+```
+
+once the tests ran, use the following command to report on the result of the coverage for our **main.py** file:
+
+```
+coverage report -m main.py
+```
+
+PUT IMAGE RESULT WHEN FINISH DEV
+
+The `Stmts` column represent the number of line in the file.
+
+The `Miss` column represent the number of line not tested in the file.
+
+The `Cover` colum represent the percentage of code tested in the file
+
+The `Missing` colum represent the percentage of code NOT tested in the file
+
+For a nicer presentation, and to get annotated HTML listings detailing missed lines, use the following command :
+
+```
+coverage html main.py
+```
+
+It will generate an html website that you can open by double clicking on `index.html`
+
+PUT IMAGE RESULT WHEN FINISH DEV
 
 ---
 
