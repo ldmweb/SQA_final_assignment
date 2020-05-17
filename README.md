@@ -16,6 +16,9 @@ This repository also covers the following themes :
 
 - [**Sprint backlog and task estimation**](#sprint-backlog-and-task-estimation)
 
+  - [task estimation](#task-estimation)
+  - [How to chose estimates](#how-to-chose-estimates)
+
 - [**Unit testing and Test-Driven development**](#unit-testing-and-test-driven-development)
 
 - [**Test coverage metric**](#test-coverage-metric)
@@ -51,6 +54,14 @@ Here is the different tasks of our sample project, each part must include a test
 8 - **get summary calculations for a Survey** : method allowing to get all the statistics of a specific survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour**
 
 9 - **get summary calculations for a question of a survey** : method allowing to get all the statistics of a specific question of a survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour 10 minutes**
+
+#### how to chose estimates :
+
+The estimation of the time needed to develop a task can be done with any mesure unit as long as estimations are coherent between the tasks. for these sample project, we have used time in hours and minutes to be clear and simple but we could use levels of difficulty (0 being easy to develop and 5 being very difficult to develop for exemple) or even number of coffe drunk.
+
+In this sample project, the task number 4 : **add a response to a survey** is estimated at 1 hour and 30 minutes of work. This task needs to develop a method that will take arguments and create variables and objets. It is so obvious that it take more time than the task number 7 : **get all responses of a Survey** estimated at 15 minutes because this method only needs to return an object and don't need to manage other variables. Usually, setter methods are longer to develop than getter methods. It does not apply to the tasks 8 and 9 as they need mathematical calculations in order to provide the correct return value. They are so estimated at 1 hour or more. **Project ideation** is the task that take the more time in the project, as it is the base of the project, it is important to spend a good amount of time to imagine a solid structure for the project. The more the structure is correclty thought, the less time developpers will lose during development as they can only focus on building features.
+
+It is also important to include in the estimation the time needed to implement the tests of the task.
 
 ---
 
