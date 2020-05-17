@@ -12,6 +12,25 @@ You will find in this file the technical documentation for the sample code proje
 
 ### **Code documentation**
 
+the different classes and methods of the project are listed here.
+
+To use the different methods, you must initialiaze the `controller()`class :
+
+```
+MyController = controller()
+```
+
+you can then use the different methods of the `controller()` class.
+
+Here is the list of the methods available in the `controller()` class :
+
+1. `createSurvey(self, name)` allow to create a new survey :
+
+```
+MyController.createSurvey("My new survey")
+-> Survey 'name_of_the_new_survey' created successfully
+```
+
 ```
 pip install -U statistics
 ```
