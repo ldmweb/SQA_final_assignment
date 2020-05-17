@@ -82,7 +82,7 @@ For a nicer presentation, and to get annotated HTML listings detailing missed li
 coverage html main.py
 ```
 
-It will generate an html website that you can open by double-clicking on `index.html`
+It will generate an HTML website that you can open by double-clicking on `index.html` located within the generated `htmlcov` folder.
 
 PUT IMAGE RESULT WHEN FINISH DEV
 
