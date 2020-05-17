@@ -12,7 +12,9 @@ This repository is an example software project that demonstrates some of the bes
 
 You will find a software sample component in **python** for storing information about surveys and responses. Each Survey is made up of multiple Questions (up to a maximum of 10). And should contain an answer to each Question in its Survey, where the answer will be an integer value between 1 and 5
 
-This repository also covers the following themes :
+The documentation of the sample code is described in the [**DOC.md**](./DOC.md) file of the the repository.
+
+This file also covers the following themes :
 
 - [**Sprint backlog and task estimation**](#sprint-backlog-and-task-estimation)
 
@@ -77,6 +79,22 @@ after a few sprints, you can get an average velocity for the team and can better
 If the velocity tends to drop, it can be a sign that part of the efficiency in the team gets lower, and it can be adjusted in the next sprint.
 
 Velocity metric is an excellent tool to monitor the capabilities of the development team and to keep the development efficient during all the project building.
+
+---
+
+### **Unit testing and Test-Driven development**
+
+Testing is capital when developing a software project. A project free from errors is more valuable and allows maintainabilty over time. Testing is checking difference between expected and actual results required in order to correct them.
+
+It is so capital to provide tests for each part of the code. In this sample project, tests are provided to test each features correclty.
+
+Tests also allow ensure that the code previously developed does not change of comportment after a new implementation by another team member.
+
+In this sample project, we use the python framework **py.test** to execute a serie of unit test on each of our features
+
+pytest is a framework that makes building simple and scalable tests easy
+
+You can find how to launch the tests serie in the documentaion of the sample code : [**DOC.md**](./DOC.md)
 
 ---
 
