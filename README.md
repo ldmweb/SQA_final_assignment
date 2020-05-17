@@ -84,17 +84,29 @@ Velocity metric is an excellent tool to monitor the capabilities of the developm
 
 ### **Unit testing and Test-Driven development**
 
-Testing is capital when developing a software project. A project free from errors is more valuable and allows maintainabilty over time. Testing is checking difference between expected and actual results required in order to correct them.
+Testing is capital when developing a software project. A project free from errors is more valuable and allows maintainability over time. Testing is checking differences between expected and actual results required in order to correct them.
 
-It is so capital to provide tests for each part of the code. In this sample project, tests are provided to test each features correclty.
+It is so capital to provide tests for each part of the code. In this sample project, tests are provided to test each feature correctly.
 
 Tests also allow ensure that the code previously developed does not change of comportment after a new implementation by another team member.
 
-In this sample project, we use the python framework **py.test** to execute a serie of unit test on each of our features
+In this sample project, we use the python framework **py.test** to execute a series of unit test on each of our features
 
-pytest is a framework that makes building simple and scalable tests easy
+**pytest** is a framework that makes building simple and scalable tests easy
 
-You can find how to launch the tests serie in the documentaion of the sample code : [**DOC.md**](./DOC.md)
+You can find how to launch the tests series in the documentation of the sample code : [**DOC.md**](./DOC.md)
+
+---
+
+### **Test Coverage Metric**
+
+When implementing tests, it is capital that your test covers the integrality of your code. Which mean that all the code written should be tested by the test framework.
+
+In order to verify this, we can use a test coverage metric to see how much percentage of your code is tested. And if it's not 100% you must adjust your tests series in order to take into account all the code.
+
+In this sample project, we use the test coverage tool **coverage.py** to check how much of our code is covered by our **py.test** series
+
+You can find how to launch the coverage metric and the result of it in the documentation of the sample code : [**DOC.md**](./DOC.md)
 
 ---
 
