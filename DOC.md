@@ -6,7 +6,7 @@ You will find in this file the technical documentation for the sample code proje
 
 - [**Code documentation**](#Code-documentation)
 - [**Tests tool documentation**](#Tests-tool-documentation)
-- [**Coverage tool docuemntation**](#coverage-tool-docuemntation)
+- [**Coverage tool docuemntation**](#coverage-tool-documentation)
 
 ---
 
