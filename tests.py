@@ -100,3 +100,28 @@ def test_getSurvey():
     assert len(MyController.surveys) == 3
     survey = MyController.getSurvey("My new survey 2")
     assert survey.name == "My new survey 2"
+
+
+def test_getResponsesSurvey():
+    MyController = controller()
+    assert MyController.getResponsesSurvey(
+        "My new survey") == "No surveys created for the moment"
+    MyController.createSurvey("My new survey")
+    assert len(MyController.surveys) == 1
+    assert MyController.getResponsesSurvey(
+        "My wrong survey") == "Survey not found, please check the name of the survey"
+    assert MyController.getResponsesSurvey(
+        "My new survey") == "No responses registered yet in this survey"
+    assert MyController.addQestionSurvey(
+        "My new survey", "My new question") == "Successfully added the question to the survey"
+    assert MyController.addResponseSurvey(
+        "My new survey", [3]) == "Answers successfully registered for this survey"
+    surveyResponses = MyController.getResponsesSurvey("My new survey")
+    assert len(surveyResponses) == 1
+    assert MyController.addResponseSurvey(
+        "My new survey", [2]) == "Answers successfully registered for this survey"
+    assert MyController.addResponseSurvey(
+        "My new survey", [5]) == "Answers successfully registered for this survey"
+    surveyResponses = MyController.getResponsesSurvey("My new survey")
+    assert len(surveyResponses) == 3
+    assert surveyResponses[1].answers[0] == 2
