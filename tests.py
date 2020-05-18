@@ -64,3 +64,6 @@ def test_addResponseSurvey():
     assert MyController.surveys[0].responses[1].answers[2] == 5
     assert MyController.addResponseSurvey(
         "My new survey", [1, 2, 5, 3, 1]) == "The number of answers must be equal with the number of questions in this survey. This survey contain 4 questions"
+    assert MyController.addResponseSurvey(
+        "My new survey", [1, 7, 5, 3]) == "All your answer must be a number between 1 and 5"
+    assert len(MyController.surveys[0].responses) == 2
