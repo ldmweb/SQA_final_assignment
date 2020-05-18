@@ -192,7 +192,7 @@ Here is the result of the test serie passed on the sample code :
 
 ![Result_test](https://i.imgur.com/YsVeE9Z.png)
 
-As you can see, all of our feaure are tested
+As you can see, all of our features are tested
 
 ---
 
