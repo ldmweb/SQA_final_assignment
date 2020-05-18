@@ -60,7 +60,9 @@ Here is the different tasks of our sample project, each part must include a test
 
 10. **get summary calculations for a question of a survey** : method allowing to get all the statistics of a specific question of a survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour 10 minutes**
 
-As it is short tasks, I will develop them in only one sprint. But if my estimations where too short, I will have to postpone the lasts tasks to a second sprint.
+**Sprint 1 :** tasks 1 to 4 - **Estimated time : 6 hours 10 minutes**
+
+**Sprint 2 :** tasks 5 to 10 - **Estimated time : 4 hours 35 minutes**
 
 #### how to chose estimates
 
@@ -74,9 +76,9 @@ It is also important to include in the estimation, the time needed to implement 
 
 To judge the efficiency of development of a team during a sprint, we can use the velocity metric. It can be measured using the same unit than the estimation of the tasks.
 
-In this sample project, the total tasks in the product backlog are estimated at 6 hours and 45 minutes of work. Let's imagine that in the first sprint we chose to do the first 7 tasks. Our sprint is so estimated at 5 hours of work. At the end of the sprint, we can calculate the team velocity, which is the amount of work the team succeed to develop in the sprint compared to the estimated amount of work of the sprint.
+In this sample project, the total tasks in the product backlog are estimated at 10 hours and 45 minutes of work. Let's imagine that in the first sprint we chose to do the first 7 tasks. Our sprint is so estimated at 8 hours and 20 minutes hours of work. At the end of the sprint, we can calculate the team velocity, which is the amount of work the team succeed to develop in the sprint compared to the estimated amount of work of the sprint.
 
-If the team succeed to develop only 6 tasks on the 7 planned, it has a sprint velocity of 4 hours and 45 minutes compared to the 5 hours estimated of the sprint. Task 7 will so be postponed to the next sprint, and the estimation of tasks can be adjusted if necessary.
+If the team succeed to develop only 6 tasks on the 7 planned, it has a sprint velocity of 7 hours and 55 minutes compared to the 8 hours and 20 minutes estimated of the sprint. Task 7 will so be postponed to the next sprint, and the estimation of tasks can be adjusted if necessary.
 
 after a few sprints, you can get an average velocity for the team and can better split the work according to the team velocity to be sure that they can develop all tasks assigned. It can also be used to forecast how much time the project can be done.
 
