@@ -8,6 +8,8 @@ You will find in this file the technical documentation for the sample code proje
 - [**Tests tool documentation**](#Tests-tool-documentation)
 - [**Coverage tool documentation**](#coverage-tool-documentation)
 
+![Result_test](https://i.imgur.com/6rXVMiF.png)
+
 ---
 
 ### **Code documentation**
@@ -186,6 +188,12 @@ To launch the test suite with full details, run the following command :
 pytest tests.py -v
 ```
 
+Here is the result of the test serie passed on the sample code :
+
+![Result_test](https://i.imgur.com/YsVeE9Z.png)
+
+As you can see, all of our feaure are tested
+
 ---
 
 ### **Coverage tool documentation**
@@ -210,7 +218,11 @@ once the tests run, use the following command to report on the result of the cov
 coverage report -m main.py
 ```
 
-PUT IMAGE RESULT WHEN FINISH DEV
+Here is the result of the coverage metric for the test serie passed on the sample code :
+
+![Result_coverage](https://i.imgur.com/2k7LfIv.png)
+
+As you can see, 100% of the lines of the code are tested.
 
 The `Stmts` column represents the number of line in the file.
 
@@ -226,9 +238,9 @@ For a nicer presentation, and to get annotated HTML listings detailing missed li
 coverage html main.py
 ```
 
-It will generate an HTML website that you can open by double-clicking on `index.html` located within the generated `htmlcov` folder.
+It will generate an HTML website that you can open by double-clicking on `index.html` located within the generated `htmlcov` folder :
 
-PUT IMAGE RESULT WHEN FINISH DEV
+![Result_coverage_HTML](https://i.imgur.com/R9mmTkX.png)
 
 ---
 
