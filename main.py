@@ -76,7 +76,7 @@ class controller:
         else:
             return "No surveys created for the moment"
 
-    def getSurvey(self, name):
+    def getResponsesSurvey(self, name):
         if len(self.surveys) != 0:
             for survey in self.surveys:
                 if survey.name == name:
