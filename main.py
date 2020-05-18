@@ -107,12 +107,42 @@ class controller:
                             values = values + response.answers
                             results["max"] = max(values)
                             results["min"] = min(values)
-                            results["average"] = sum(
-                                values) / len(values)
+                            results["average"] = sum(values) / len(values)
                             results["std_dev"] = stdev(values)
                         return results
                     else:
                         return "No responses registered yet in this survey"
+            return "Survey not found, please check the name of the survey"
+        else:
+            return "No surveys created for the moment"
+
+    def getSummaryQuestion(self, name, question):
+        if len(self.surveys) != 0:
+            for survey in self.surveys:
+                if survey.name == name:
+                    index = 0
+                    for Question in survey.questions:
+                        if Question == question:
+                            if len(survey.responses) != 0:
+                                results = {
+                                    "average": 0,
+                                    "std_dev": 0,
+                                    "min": 0,
+                                    "max": 0,
+                                }
+                                values = []
+                                for response in survey.responses:
+                                    values.append(response.answers[index])
+                                results["max"] = max(values)
+                                results["min"] = min(values)
+                                results["average"] = sum(values) / len(values)
+                                results["std_dev"] = stdev(values)
+                                return results
+                            else:
+                                return "No responses registered yet in this survey"
+                        else:
+                            index = index + 1
+                    return "Question not found, please check the name of the Question"
             return "Survey not found, please check the name of the survey"
         else:
             return "No surveys created for the moment"
