@@ -46,7 +46,7 @@ Here is the different tasks of our sample project, each part must include a test
 
 3. **add a question to a survey** : method allowing to add a question to a survey by providing the name of the survey and the question. Each survey will contain 10 questions maximum. - **Estimated time : 1 hour 30 minutes**
 
-4. **add a response to a survey** : method allowing to add a response to a survey by providing the name of the survey and the question. Each survey's answer must be an integer value between 1 and 5. - **Estimated time : 1 hour 30 minutes**
+4. **add a response to a survey** : method allowing to add a response to a survey by providing the name of the survey an array of answers. Each answer must be an integer value between 1 and 5. - **Estimated time : 1 hour 30 minutes**
 
 5. **get all surveys** : method allowing to get a list of all the surveys created. - **Estimated time : 15 minutes**
 
