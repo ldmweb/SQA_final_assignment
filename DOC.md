@@ -14,6 +14,12 @@ You will find in this file the technical documentation for the sample code proje
 
 the different classes and methods of the project are listed here.
 
+the `Main.py` file need the statistics python module in order to be launched. To install this module, run :
+
+```
+pip install -U statistics
+```
+
 To use the different methods, you must initialiaze the `controller()`class :
 
 ```
@@ -100,17 +106,39 @@ MyController.getSurvey("My new survey")
 
 **Return** : `My_new_survey_object`
 
-**6 - `getResponsesSurvey()`** allow to get the listof surveyResponses for a specific survey by passing the survey name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed. If there is not responses registered yet for this survey, an error message will be displayed.
+```
+MyController.getSurvey("My wrong survey")
+```
+
+**Return** : `Survey not found, please check the name of the survey`
+
+**6 - `getResponsesSurvey()`** allow to get the list of surveyResponses for a specific survey by passing the survey name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed. If there is not responses registered yet for this survey, an error message will be displayed.
 
 ```
-MyController.getSurvey("My new survey")
+MyController.getResponsesSurvey("My new survey")
 ```
 
 **Return** : `[My_new_survey_responses]`
 
 ```
-pip install -U statistics
+MyController.getResponsesSurvey("My wrong survey")
 ```
+
+**Return** : `Survey not found, please check the name of the survey`
+
+**7 - `getSummarySurvey()`** allow to get all the statistics of the responses of a specific survey including the average, standard deviation, minimum and maximum score of it by passing the survey name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed. If there is not responses registered yet for this survey, an error message will be displayed.
+
+```
+MyController.getSummarySurvey("My new survey")
+```
+
+**Return** : `{"average":`_average_score_of_the_answers_`, "std_dev":`_standard_dev_of_the_answers_`, "min":`_minimum_score_of_the_answers_`, "max":`_maximum_score_of_the_answers_`,}`
+
+```
+MyController.getSummarySurvey("My wrong survey")
+```
+
+**Return** : `Survey not found, please check the name of the survey`
 
 ---
 

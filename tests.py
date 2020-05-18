@@ -125,3 +125,24 @@ def test_getResponsesSurvey():
     surveyResponses = MyController.getResponsesSurvey("My new survey")
     assert len(surveyResponses) == 3
     assert surveyResponses[1].answers[0] == 2
+
+
+def test_getSummarySurvey():
+    MyController = controller()
+    assert MyController.getSummarySurvey(
+        "My new survey") == "No surveys created for the moment"
+    MyController.createSurvey("My new survey")
+    assert len(MyController.surveys) == 1
+    assert MyController.getSummarySurvey(
+        "My wrong survey") == "Survey not found, please check the name of the survey"
+    assert MyController.getSummarySurvey(
+        "My new survey") == "No responses registered yet in this survey"
+    MyController.addQestionSurvey("My new survey", "My new question")
+    MyController.addQestionSurvey("My new survey", "My new question 2")
+    MyController.addResponseSurvey("My new survey", [1, 5])
+    MyController.addResponseSurvey("My new survey", [5, 1])
+    results = MyController.getSummarySurvey("My new survey")
+    assert results["max"] == 5
+    assert results["min"] == 1
+    assert results["average"] == 3
+    assert results["std_dev"] == 2.309401076758503
