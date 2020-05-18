@@ -92,6 +92,14 @@ MyController.getAllSurveys()
 
 **Return** : `[surveys_list]`
 
+**5 - `getSurvey()`** allow to get a specific survey created in the `MyController()` instance by passing the survey name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed.
+
+```
+MyController.getSurvey("My new survey")
+```
+
+**Return** : `My_new_survey_object`
+
 ```
 pip install -U statistics
 ```
