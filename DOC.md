@@ -140,6 +140,26 @@ MyController.getSummarySurvey("My wrong survey")
 
 **Return** : `Survey not found, please check the name of the survey`
 
+**8 - `getSummaryQuestion()`** allow to get all the statistics of the responses of a specific question within a specific survey including the average, standard deviation, minimum and maximum score of it by passing the survey name - **`string`** and the question name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed. If there is not responses registered yet for this survey, an error message will be displayed.
+
+```
+MyController.getSummaryQuestion("My new survey", My new question)
+```
+
+**Return** : `{"average":`_average_score_of_the_answers_`, "std_dev":`_standard_dev_of_the_answers_`, "min":`_minimum_score_of_the_answers_`, "max":`_maximum_score_of_the_answers_`,}`
+
+```
+MyController.getSummaryQuestion("My wrong survey", My new question)
+```
+
+**Return** : `Survey not found, please check the name of the survey`
+
+```
+MyController.getSummaryQuestion("My new survey", My wrong question)
+```
+
+**Return** : `Question not found, please check the name of the question`
+
 ---
 
 ### **Tests tool documentation**
