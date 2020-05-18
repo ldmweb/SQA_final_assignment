@@ -83,3 +83,20 @@ def test_getAllSurveys():
     assert surveys[1] == MyController.surveys[1]
     assert surveys[2] == MyController.surveys[2]
     assert len(MyController.surveys) == 3
+
+
+def test_getSurvey():
+    MyController = controller()
+    assert MyController.getSurvey(
+        "My new survey") == "No surveys created for the moment"
+    MyController.createSurvey("My new survey")
+    assert len(MyController.surveys) == 1
+    assert MyController.getSurvey(
+        "My wrong survey") == "Survey not found, please check the name of the survey"
+    survey = MyController.getSurvey("My new survey")
+    assert survey.name == "My new survey"
+    MyController.createSurvey("My new survey 2")
+    MyController.createSurvey("My new survey 3")
+    assert len(MyController.surveys) == 3
+    survey = MyController.getSurvey("My new survey 2")
+    assert survey.name == "My new survey 2"
