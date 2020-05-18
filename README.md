@@ -42,7 +42,7 @@ Here is the different tasks of our sample project, each part must include a test
 
 1. **Project ideation** : Imagining the infrastructure of it with the different classes, methods and variables necessary for the project to run correctly. - **Estimated time : 3 hours**
 
-2. **Project base** : provide the fundation of the project with the file structure, the classes and the implementation of the testing tool and the covergae metric tool - **Estimated time : 1 hours**
+2. **Project base** : provide the fundation of the project with the file structure, the classes and the implementation of the testing tool and the coverage metric tool - **Estimated time : 1 hours**
 
 3. **creates a new Survey** : method allowing to create a new survey. - **Estimated time : 40 minutes**
 
@@ -154,6 +154,10 @@ For this sample code project, we used the following gitflow process.
 ```
 
 6. Once the feature you developed is done and tested, you can merge your feature_branch with the development branch to implement your work to the global project. To do so, perform a pull request on the dev branch from your feature_branch. The pull request will be reviewed by the project manager and accepted if all the requirement and tests are correct. You can then start a new feature in a new branch.
+
+This following image is the result of the team version control for the sample code project :
+
+PUT TEAM VERSION CONTROL IMAGE WHEN FINISH THE CODE
 
 It is highly important that all the members of the team respect this gitflow process in order to develop separately the different part of the project without interfering with each other.
 

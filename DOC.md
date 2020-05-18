@@ -24,56 +24,65 @@ you can then use the different methods of the `controller()` class.
 
 Here is the list of the methods available in the `controller()` class :
 
-1. `createSurvey(self, name)` allow to create a new survey :
+**1 - `createSurvey(name)`** allow to create a new survey by passing the survey name - **`string`** in parameters:
 
 ```
 MyController.createSurvey("My new survey")
--> Survey 'name_of_the_new_survey' created successfully
 ```
 
-2. `addQestionSurvey(self, name, question)` allow to add a question to a survey. 10 questions maximum per survey :
+**Return** : `Survey 'name_of_the_new_survey' created successfully`
 
-```
-MyController.addQestionSurvey("My new survey", "My new question")
--> Successfully added the question to the survey
-```
+**2 - `addQestionSurvey(name, question)`** allow to add a question to a survey by passing the survey name - **`string`** and a new survey question - **`string`** in parameters. 10 questions maximum per survey :
 
 ```
 MyController.addQestionSurvey("My new survey", "My new question")
--> This question already exist in the survey
 ```
+
+**Return** : `Successfully added the question to the survey`
+
+```
+MyController.addQestionSurvey("My new survey", "My new question")
+```
+
+**Return** : `This question already exist in the survey`
 
 ```
 MyController.addQestionSurvey("My new survey", "My new question number 11")
--> Reached limit of questions for this survey
 ```
+
+**Return** : `Reached limit of questions for this survey`
 
 ```
 MyController.addQestionSurvey("My wrong survey", "My new question")
--> Survey not found, please check the name of the survey
 ```
 
-3. `addResponseSurvey(self, name, answers)` allow to add a response to a survey containing the answers for each questions of the survey. The number of answers must be equal to the number of questions in the survey. The answers must be numbers between 1 and 5 formated in an array :
+**Return** : `Survey not found, please check the name of the survey`
+
+**3 - `addResponseSurvey(name, answers)`** allow to add a response to a survey containing the answers for each questions of the survey by passing the survey name - **`string`** and the answers for the survey - **`array Int`** in parameters. The number of answers must be equal to the number of questions in the survey. The answers must be numbers between 1 and 5 :
 
 ```
 MyController.addResponseSurvey("My new survey", [1, 2, 5, 3])
--> Answers successfully registered for this survey
 ```
 
+**Return** : `Answers successfully registered for this survey`
+
 ```
-MyController.addResponseSurvey("My new survey", [1, 2, 5, 3, 1])
--> The number of answers must be equal with the number of questions in this survey. This survey contain number_of_survey_questions questions
+MyController.addResponseSurvey("My new survey", [1, 2, 5, 3, 1, 2])
 ```
+
+**Return** : `The number of answers must be equal with the number of questions in this survey. This survey contain number_of_survey_questions questions`
 
 ```
 MyController.addResponseSurvey("My new survey", [1, 7, 5, 3])
--> All your answers must be a number between 1 and 5
 ```
+
+**Return** : `All your answers must be a number between 1 and 5`
 
 ```
 MyController.addResponseSurvey("My wrong survey", [1, 2, 5, 3])
--> Survey not found, please check the name of the survey
 ```
+
+**Return** : `Survey not found, please check the name of the survey`
 
 ```
 pip install -U statistics
