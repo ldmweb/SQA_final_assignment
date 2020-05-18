@@ -40,3 +40,27 @@ def test_addQuestionSurvey():
     assert len(MyController.surveys[0].questions) == 10
     assert MyController.addQestionSurvey(
         "My new survey", "My new question 10") == "Reached limit of questions for this survey"
+
+
+def test_addResponseSurvey():
+    MyController = controller()
+    MyController.createSurvey("My new survey")
+    assert len(MyController.surveys) == 1
+    MyController.addQestionSurvey("My new survey", "My new question 1")
+    MyController.addQestionSurvey("My new survey", "My new question 2")
+    MyController.addQestionSurvey("My new survey", "My new question 3")
+    MyController.addQestionSurvey("My new survey", "My new question 4")
+    assert len(MyController.surveys[0].questions) == 4
+    assert MyController.addResponseSurvey(
+        "My wrong survey", [1, 2, 5, 3]) == "Survey not found, please check the name of the survey"
+    assert MyController.addResponseSurvey(
+        "My new survey", [1, 2, 5, 3]) == "Answers successfully registered for this survey"
+    assert len(MyController.surveys[0].responses) == 1
+    assert len(MyController.surveys[0].responses[0].answers) == 4
+    MyController.addResponseSurvey(
+        "My new survey", [1, 2, 5, 3])
+    assert len(MyController.surveys[0].responses) == 2
+    assert len(MyController.surveys[0].responses[1].answers) == 4
+    assert MyController.surveys[0].responses[1].answers[2] == 5
+    assert MyController.addResponseSurvey(
+        "My new survey", [1, 2, 5, 3, 1]) == "The number of answers must be equal with the number of questions in this survey. This survey contain 4 questions"

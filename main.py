@@ -1,15 +1,16 @@
 class surveyResponse:
     def __init__(self):
-        self.answer = []
+        self.answers = []
 
-    def addAnswers(self, answers, numberQuestions):
-        if numberQuestions != len(answers):
-            return "The number of answers must be equal with the number of questions in this survey. This survey contain" + numberQuestions + "questions"
+    def addAnswers(self, answers, questions):
+        if len(questions) != len(answers):
+            return "The number of answers must be equal with the number of questions in this survey. This survey contain " + str(len(questions)) + " questions"
         for answer in answers:
             if answer != 1 and answer != 2 and answer != 3 and answer != 4 and answer != 5:
                 return "All your answer must be a number between 1 and 5"
         for answer in answers:
-            self.answer = answer
+            self.answers.append(answer)
+        return "Answers successfully registered for this survey"
 
 
 class survey:
@@ -30,8 +31,8 @@ class survey:
 
     def addResponse(self, answers):
         newResponse = surveyResponse()
-        return self.responses.append(newResponse.addAnswers(
-            answers, len(self.questions)))
+        self.responses.append(newResponse)
+        return newResponse.addAnswers(answers, self.questions)
 
 
 class controller:
