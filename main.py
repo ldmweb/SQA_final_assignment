@@ -60,3 +60,9 @@ class controller:
                 return survey.addResponse(answers)
             else:
                 return "Survey not found, please check the name of the survey"
+
+    def getAllSurveys(self):
+        if len(self.surveys) != 0:
+            return self.surveys
+        else:
+            return "No surveys created for the moment"

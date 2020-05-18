@@ -84,6 +84,14 @@ MyController.addResponseSurvey("My wrong survey", [1, 2, 5, 3])
 
 **Return** : `Survey not found, please check the name of the survey`
 
+**4 - `getAllSurveys()`** allow to get all the surveys created in the `MyController()` instance. If there is no survey created yet, an error message will be displayed. No parameters required :
+
+```
+MyController.getAllSurveys()
+```
+
+**Return** : `[surveys_list]`
+
 ```
 pip install -U statistics
 ```
@@ -108,10 +116,10 @@ To check that you installed the correct version:
 pytest --version
 ```
 
-To launch the test suite, run the following command :
+To launch the test suite with full details, run the following command :
 
 ```
-pytest tests.py
+pytest tests.py -v
 ```
 
 ---

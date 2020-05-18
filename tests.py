@@ -67,3 +67,19 @@ def test_addResponseSurvey():
     assert MyController.addResponseSurvey(
         "My new survey", [1, 7, 5, 3]) == "All your answer must be a number between 1 and 5"
     assert len(MyController.surveys[0].responses) == 2
+
+
+def test_getAllSurveys():
+    MyController = controller()
+    assert MyController.getAllSurveys() == "No surveys created for the moment"
+    MyController.createSurvey("My new survey")
+    surveys = MyController.getAllSurveys()
+    assert surveys[0] == MyController.surveys[0]
+    assert len(MyController.surveys) == 1
+    MyController.createSurvey("My new survey 2")
+    MyController.createSurvey("My new survey 3")
+    surveys = MyController.getAllSurveys()
+    assert surveys[0] == MyController.surveys[0]
+    assert surveys[1] == MyController.surveys[1]
+    assert surveys[2] == MyController.surveys[2]
+    assert len(MyController.surveys) == 3
