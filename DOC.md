@@ -93,7 +93,7 @@ The `Miss` column represents the number of line not tested in the file.
 
 The `Cover` column represents the percentage of code tested in the file
 
-The `Missing` column represents the percentage of code NOT tested in the file
+The `Missing` column represents the line number of the NOT tested code in the file
 
 For a nicer presentation, and to get annotated HTML listings detailing missed lines, use the following command :
 
