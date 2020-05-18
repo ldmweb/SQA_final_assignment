@@ -8,6 +8,8 @@ You will find in this file the technical documentation for the sample code proje
 - [**Tests tool documentation**](#Tests-tool-documentation)
 - [**Coverage tool documentation**](#coverage-tool-documentation)
 
+![Result_test](https://i.imgur.com/6rXVMiF.png)
+
 ---
 
 ### **Code documentation**

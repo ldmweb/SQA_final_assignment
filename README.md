@@ -157,10 +157,6 @@ For this sample code project, we used the following gitflow process.
 
 6. Once the feature you developed is done and tested, you can merge your feature_branch with the development branch to implement your work to the global project. To do so, perform a pull request on the dev branch from your feature_branch. The pull request will be reviewed by the project manager and accepted if all the requirement and tests are correct. You can then start a new feature in a new branch.
 
-This following image is the result of the team version control for the sample code project :
-
-PUT TEAM VERSION CONTROL IMAGE WHEN FINISH THE CODE
-
 It is highly important that all the members of the team respect this gitflow process in order to develop separately the different part of the project without interfering with each other.
 
 ---
