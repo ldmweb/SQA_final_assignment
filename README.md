@@ -182,6 +182,8 @@ For this sample project, here is the checklist of things that a reviewer should 
 - [x] Each code feature is tested / can be tested
 - [x] Testing coverage of the code is 100%
 
+You can find on [**this closed pull request**](https://github.com/ldmweb/SQA_final_assignment/pull/10#issue-419630885) an exemple of a validated review that validate all requested code-review checks.
+
 ---
 
 **Lilian Desvaux de Marigny** - D19124161
