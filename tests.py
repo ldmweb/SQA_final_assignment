@@ -146,3 +146,29 @@ def test_getSummarySurvey():
     assert results["min"] == 1
     assert results["average"] == 3
     assert results["std_dev"] == 2.309401076758503
+
+
+def test_getSummaryQuestion():
+    MyController = controller()
+    assert MyController.getSummaryQuestion(
+        "My new survey", "My new question") == "No surveys created for the moment"
+    MyController.createSurvey("My new survey")
+    assert len(MyController.surveys) == 1
+    assert MyController.getSummaryQuestion(
+        "My wrong survey", "My new question") == "Survey not found, please check the name of the survey"
+    assert MyController.getSummaryQuestion(
+        "My new survey", "My new question") == "Question not found, please check the name of the Question"
+    MyController.addQestionSurvey("My new survey", "My new question")
+    assert MyController.getSummaryQuestion(
+        "My new survey", "My new question") == "No responses registered yet in this survey"
+    MyController.addQestionSurvey("My new survey", "My new question 2")
+    MyController.addQestionSurvey("My new survey", "My new question 3")
+    assert len(MyController.surveys[0].questions) == 3
+    MyController.addResponseSurvey("My new survey", [2, 1, 4])
+    MyController.addResponseSurvey("My new survey", [4, 5, 2])
+    results = MyController.getSummaryQuestion(
+        "My new survey", "My new question 2")
+    assert results["max"] == 5
+    assert results["min"] == 1
+    assert results["average"] == 3
+    assert results["std_dev"] == 2.8284271247461903
