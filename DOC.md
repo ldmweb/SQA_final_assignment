@@ -100,6 +100,14 @@ MyController.getSurvey("My new survey")
 
 **Return** : `My_new_survey_object`
 
+**6 - `getResponsesSurvey()`** allow to get the listof surveyResponses for a specific survey by passing the survey name - **`string`** in parameters. If there is no survey created yet, an error message will be displayed. If there is not responses registered yet for this survey, an error message will be displayed.
+
+```
+MyController.getSurvey("My new survey")
+```
+
+**Return** : `[My_new_survey_responses]`
+
 ```
 pip install -U statistics
 ```

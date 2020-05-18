@@ -75,3 +75,15 @@ class controller:
             return "Survey not found, please check the name of the survey"
         else:
             return "No surveys created for the moment"
+
+    def getResponsesSurvey(self, name):
+        if len(self.surveys) != 0:
+            for survey in self.surveys:
+                if survey.name == name:
+                    if len(survey.responses) != 0:
+                        return survey.responses
+                    else:
+                        return "No responses registered yet in this survey"
+            return "Survey not found, please check the name of the survey"
+        else:
+            return "No surveys created for the moment"
