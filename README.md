@@ -40,29 +40,33 @@ Here is the different tasks of our sample project, each part must include a test
 
 #### Task estimation
 
-1. **Project ideation** : provide the fundation of the project by imagining the infrastructure of it with the different classes, methods and variables necessary for the project to run correctly. - **Estimated time : 4 hours**
+1. **Project ideation** : Imagining the infrastructure of it with the different classes, methods and variables necessary for the project to run correctly. - **Estimated time : 3 hours**
 
-2. **creates a new Survey** : method allowing to create a new survey. - **Estimated time : 40 minutes**
+2. **Project base** : provide the fundation of the project with the file structure, the classes and the implementation of the testing tool and the covergae metric tool - **Estimated time : 1 hours**
 
-3. **add a question to a survey** : method allowing to add a question to a survey by providing the name of the survey and the question. Each survey will contain 10 questions maximum. - **Estimated time : 1 hour 30 minutes**
+3. **creates a new Survey** : method allowing to create a new survey. - **Estimated time : 40 minutes**
 
-4. **add a response to a survey** : method allowing to add a response to a survey by providing the name of the survey an array of answers. Each answer must be an integer value between 1 and 5. - **Estimated time : 1 hour 30 minutes**
+4. **add a question to a survey** : method allowing to add a question to a survey by providing the name of the survey and the question. Each survey will contain 10 questions maximum. - **Estimated time : 1 hour 30 minutes**
 
-5. **get all surveys** : method allowing to get a list of all the surveys created. - **Estimated time : 15 minutes**
+5. **add a response to a survey** : method allowing to add a response to a survey by providing the name of the survey an array of answers. Each answer must be an integer value between 1 and 5. - **Estimated time : 1 hour 30 minutes**
 
-6. **get a specific survey by name** : method allowing to get a specific survey created by providing its name. - **Estimated time : 25 minutes**
+6. **get all surveys** : method allowing to get a list of all the surveys created. - **Estimated time : 15 minutes**
 
-7. **get all responses of a Survey** : method allowing to get a list of all the responses associated with a specific survey by providing its name. - **Estimated time : 15 minutes**
+7. **get a specific survey by name** : method allowing to get a specific survey created by providing its name. - **Estimated time : 25 minutes**
 
-8. **get summary calculations for a Survey** : method allowing to get all the statistics of a specific survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour**
+8. **get all responses of a Survey** : method allowing to get a list of all the responses associated with a specific survey by providing its name. - **Estimated time : 15 minutes**
 
-9. **get summary calculations for a question of a survey** : method allowing to get all the statistics of a specific question of a survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour 10 minutes**
+9. **get summary calculations for a Survey** : method allowing to get all the statistics of a specific survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour**
+
+10. **get summary calculations for a question of a survey** : method allowing to get all the statistics of a specific question of a survey including the average, standard deviation, minimum and maximum score of it. - **Estimated time : 1 hour 10 minutes**
+
+As it is short tasks, I will develop them in only one sprint. But if my estimations where too short, I will have to postpone the lasts tasks to a second sprint.
 
 #### how to chose estimates
 
 The estimation of the time needed to develop a task can be done with any measuring unit as long as estimations are coherent between the tasks. for these sample project, we have used time in hours and minutes to be clear and simple but we could use levels of difficulty (0 being easy to develop and 5 being very difficult to develop for example) or even number of coffee drunk.
 
-In this sample project, task number 4 : **add a response to a survey** is estimated at 1 hour and 30 minutes of work. This task needs to develop a method that will take arguments and create variables and objects. It is so obvious that it takes more time than the task number 7 : **get all responses of a Survey** estimated at 15 minutes because this method only needs to return an object and don't need to manage other variables. Usually, setter methods are longer to develop than getter methods. It does not apply to tasks 8 and 9 as they need mathematical calculations in order to provide the correct return value. They are so estimated at 1 hour or more. **Project ideation** is the task that takes the more time in the project, as it is the base of the project, it is important to spend a good amount of time to imagine a solid structure for the project. The more the structure is correctly thought, the fewer time developers will lose during development as they can only focus on building features.
+In this sample project, task number 5 : **add a response to a survey** is estimated at 1 hour and 30 minutes of work. This task needs to develop a method that will take arguments and create variables and objects. It is so obvious that it takes more time than the task number 8 : **get all responses of a Survey** estimated at 15 minutes because this method only needs to return an object and don't need to manage other variables. Usually, setter methods are longer to develop than getter methods. It does not apply to tasks 9 and 10 as they need mathematical calculations in order to provide the correct return value. They are so estimated at 1 hour or more. **Project ideation** is the task that takes the more time in the project, as it is the base of the project, it is important to spend a good amount of time to imagine a solid structure for the project. The more the structure is correctly thought, the fewer time developers will lose during development as they can only focus on building features.
 
 It is also important to include in the estimation, the time needed to implement the tests of the task.
 
@@ -70,9 +74,9 @@ It is also important to include in the estimation, the time needed to implement 
 
 To judge the efficiency of development of a team during a sprint, we can use the velocity metric. It can be measured using the same unit than the estimation of the tasks.
 
-In this sample project, the total tasks in the product backlog are estimated at 6 hours and 45 minutes of work. Let's imagine that in the first sprint we chose to do the first 6 tasks. Our sprint is so estimated at 5 hours of work. At the end of the sprint, we can calculate the team velocity, which is the amount of work the team succeed to develop in the sprint compared to the estimated amount of work of the sprint.
+In this sample project, the total tasks in the product backlog are estimated at 6 hours and 45 minutes of work. Let's imagine that in the first sprint we chose to do the first 7 tasks. Our sprint is so estimated at 5 hours of work. At the end of the sprint, we can calculate the team velocity, which is the amount of work the team succeed to develop in the sprint compared to the estimated amount of work of the sprint.
 
-If the team succeed to develop only 5 tasks on the 6 planned, it has a sprint velocity of 4 hours and 45 minutes compared to the 5 hours estimated of the sprint. Task 6 will so be postponed to the next sprint, and the estimation of tasks can be adjusted if necessary.
+If the team succeed to develop only 6 tasks on the 7 planned, it has a sprint velocity of 4 hours and 45 minutes compared to the 5 hours estimated of the sprint. Task 7 will so be postponed to the next sprint, and the estimation of tasks can be adjusted if necessary.
 
 after a few sprints, you can get an average velocity for the team and can better split the work according to the team velocity to be sure that they can develop all tasks assigned. It can also be used to forecast how much time the project can be done.
 
